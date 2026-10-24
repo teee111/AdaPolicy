@@ -74,7 +74,7 @@
 
 
   <!-- TODO: Replace with your paper title and authors -->
-  <title>Eliciting Anticipatory Latent Dynamics in Robot Policies via Next-Chunk Prediction</title>
+  <title>AdaPolicy: Action-Driven Anticipation for Robot Policies</title>
   
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
@@ -190,7 +190,7 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Eliciting Anticipatory Latent Dynamics in Robot Policies via Next-Chunk Prediction</h1>
+            <h1 class="title is-1 publication-title">AdaPolicy: Action-Driven Anticipation for Robot Policies</h1>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
@@ -556,7 +556,7 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Endowing robot policies with future prediction has proven effective in improving control performance. However, existing methods predominantly rely on explicit supervision derived from future observations, in either pixel or latent space, at the cost of additional architectural and computational complexity. Departing from explicit future supervision, we ask whether anticipatory latent dynamics can be elicited from the action signal. To this end, we propose CNCPolicy, a cascaded next-chunk prediction framework that shapes the policy's latent dynamics through subsequent-action supervision. Specifically, an Online Action Head jointly produces the current action chunk and an evolved latent state. Building on this state, a cascaded Unrolled Action Head forecasts the next chunk, and the resulting loss flows back through the evolved state, shaping the latent dynamics of the online policy. Importantly, the unroll operates only during training, making CNCPolicy plug-and-play with no inference-time overhead. Experiments on MetaWorld, RoboTwin 2.0, LIBERO, and real-world deployments demonstrate consistent gains across diverse settings, including up to 14 points on millimeter-precision tasks such as earphone assembly and shoelace threading. More details and visualizations are available at https://teee111.github.io/CNCPolicy/.
+            Endowing robot policies with anticipatory capabilities has proven effective in improving control performance. However, existing methods predominantly rely on explicit supervision derived from future observations, in either pixel or latent space, at the cost of additional architectural and computational complexity. Departing from explicit future supervision, we ask whether such foresight can be elicited directly from the action signal. To this end, we propose AdaPolicy, an action-driven anticipatory policy framework that shapes future-aware representations via cascaded next-chunk prediction. Specifically, an Online Action Head jointly produces the current action chunk and an evolved latent state. Building on this state, a cascaded Unrolled Action Head forecasts the next chunk, and the resulting loss flows back through the evolved state to instill implicit foresight into the online policy. Importantly, the unroll operates only during training, making AdaPolicy plug-and-play with no inference-time overhead. Experiments on MetaWorld, RoboTwin 2.0, LIBERO, and real-world deployments demonstrate consistent gains across diverse settings, including up to 14 percentage points on millimeter-precision tasks such as earphone assembly and shoelace threading. More details and visualizations are available at https://teee111.github.io/AdaPolicy/.
           </p>
         </div>
       </div>
